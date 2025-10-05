@@ -8,7 +8,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Center the main content vertically and horizontally */
     min-height: 100vh;
     display: flex; /* FLEXBOX: Overall vertical stack */
     flex-direction: column;
@@ -21,15 +20,15 @@ body {
 
 header {
     width: 100%;
-    /* Dark gray background for the header bar */
     background-color: #808080;
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Child Selector */
 header > div {
     /* Inner container for header content (Navigation and Profile) */
-    max-width: 500px; /* Constrain header width similar to the card */
+    max-width: 500px;
     margin: 0 auto;
     display: flex; /* FLEXBOX: Nav links vs Profile icon side-by-side */
     justify-content: space-between;
@@ -40,23 +39,23 @@ header > div {
 /* Navigation Links Container */
 .nav-links {
     display: flex; /* FLEXBOX: Home and Add Post links side-by-side */
-    gap: 10px; /* Space between Home and Add Post */
+    gap: 10px;
 }
 
 /* Navigation Item Styling (applied to the <a> tag) */
 .nav-item {
-    background-color: #9a9a9a; /* Slightly lighter gray box */
+    background-color: #9a9a9a;
     padding: 8px 15px;
     border-radius: 8px;
     border: 1px solid #606060;
     cursor: pointer;
     transition: background-color 0.15s ease-in-out;
-    text-decoration: none; /* Remove default underline from link */
-    color: white; /* Ensure text remains white */
-    display: block; /* Make sure padding works */
+    text-decoration: none;
+    color: white; 
+    display: block; 
 }
 
-/* Ensure H1 inside the link is styled correctly */
+/* Descendant Selector */
 .nav-item h1 {
     color: inherit;
     font-size: 1.1em;
@@ -64,14 +63,19 @@ header > div {
     margin: 0;
 }
 
-/* Hover effect for navigation item (required for assignment) */
+/* Pseudo-class Selector */
 .nav-item:hover {
-    background-color: #b0b0b0; /* Lighten the background on hover */
+    background-color: #b0b0b0; 
 }
 
 /* Profile Icon Placeholder */
+/* Applying Adjacent Sibling Selector here to satisfy requirement */
+header + main {
+    margin-top: 5px; /* Add a slight margin between the header and main content */
+}
+
+/* Profile Icon Placeholder (from original code, kept for completeness) */
 .profile-icon {
-    /* Style for the container holding the SVG profile icon */
     width: 30px;
     height: 30px;
     background-color: #9a9a9a;
@@ -91,7 +95,7 @@ header > div {
 
 .profile-icon svg {
     /* Styling the SVG to look like the icon */
-    fill: #333; /* Dark fill color for the icon shape */
+    fill: #333;
     width: 20px;
     height: 20px;
 }
@@ -109,6 +113,7 @@ main {
     padding: 20px;
 }
 
+/* Child Selector */
 main > div {
     /* The Post Card container. Max width ensures responsiveness on mobile. */
     background-color: #c0c0c0; /* Main card background (light gray/silver) */
@@ -127,13 +132,18 @@ main form {
     gap: 15px;
 }
 
+/* General Sibling Selector - Applies a border to all form row divs that follow the first form row div */
+main form > div:first-child ~ div {
+    border-top: 1px dotted #999;
+    padding-top: 15px;
+}
+
+
 /* Styling for input rows (Label + Input/Textarea/Button) */
-/* CHANGED: Switched from Grid back to Flexbox to satisfy assignment requirement */
 main form > div:not(.submit-button-wrapper) {
-    display: flex; /* FLEXBOX: Label and input side-by-side */
-    /* grid-template-columns: 1fr 2fr; <-- REMOVED Grid */
+    display: flex;
     gap: 10px;
-    align-items: flex-start; /* Align label and input/textarea at the top */
+    align-items: flex-start;
 }
 
 /* Special alignment for the button row (to center it) */
@@ -145,29 +155,14 @@ main form > div:not(.submit-button-wrapper) {
 
 
 /* -------------------------------------- */
-/* 4. Form Elements (UPDATED) */
+/* 4. Form Elements */
 /* -------------------------------------- */
 
 label, span {
     font-size: 0.9em;
     font-weight: normal;
     color: #333;
-    padding-top: 5px; /* Visual alignment with the top of the input fields */
-}
-
-/* ADDED: Flex sizing for elements in the form rows (1fr portion) */
-main form > div:not(.submit-button-wrapper) > label,
-main form > div:not(.submit-button-wrapper) > span {
-    flex: 1; /* Assigns 1 part width (1/3) */
-    min-width: 0; /* Ensures proper shrinking on small screens */
-}
-
-/* ADDED: Flex sizing for elements in the form rows (2fr portion) */
-main form > div:not(.submit-button-wrapper) > input:not([type="file"]),
-main form > div:not(.submit-button-wrapper) > textarea,
-main form > div:not(.submit-button-wrapper) > div {
-    flex: 2; /* Assigns 2 parts width (2/3) */
-    min-width: 0; /* Ensures proper shrinking on small screens */
+    padding-top: 5px; 
 }
 
 /* Style for standard text, email, password inputs (e.g., Post Title) */
@@ -179,17 +174,18 @@ input[type="password"] {
     border: 1px solid #aaa;
     border-radius: 3px;
     background-color: white;
-    box-sizing: border-box; /* Important for padding not to increase total width */
+    box-sizing: border-box; 
     font-size: 1em;
 }
 
-textarea {
+/* ID Selector (Required) */
+#post-body {
     width: 100%;
     min-height: 70px;
     padding: 5px;
-    border: 1px solid #aaa;
+    border: 2px solid #336699;
     border-radius: 3px;
-    background-color: white;
+    background-color: #e6f0ff;
     box-sizing: border-box;
     resize: vertical;
 }
@@ -204,7 +200,7 @@ input[type="file"] {
 /* Style the label to look like the "Choose File" button */
 label[for="file-upload"] {
     display: inline-block;
-    background-color: #808080; /* Gray background for Choose File button */
+    background-color: #808080;
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
@@ -218,7 +214,7 @@ label[for="file-upload"] {
 
 /* Hover effect for the custom file upload button */
 label[for="file-upload"]:hover {
-    background-color: #9a9a9a; /* Lighten the background on hover */
+    background-color: #9a9a9a; 
 }
 
 /* Container for displaying the selected filename */
@@ -227,8 +223,8 @@ label[for="file-upload"]:hover {
     color: #555;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Use ellipsis for long filenames */
-    flex-grow: 1; /* Allows it to take up the available space next to the button */
+    text-overflow: ellipsis; 
+    flex-grow: 1;
 }
 
 /* Create Post Link styled as a Button */
@@ -238,7 +234,7 @@ label[for="file-upload"]:hover {
     display: inline-block;
 
     /* Button styling */
-    background-color: #336699; /* Blue background for Create Post button */
+    background-color: #336699;
     color: white;
     padding: 10px 20px;
     border: none;
