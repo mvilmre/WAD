@@ -1,0 +1,37 @@
+<html lang="et">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — PostIt</title>
+
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="page" role="document">
+    <header class="topbar" role="banner">
+      <nav aria-label="Peamenüü">
+        <a href="index.html">Home</a>
+      </nav>
+      <div class="avatar" aria-hidden="true"></div>
+    </header>
+
+    <main class="center">
+      <div class="login-box" role="form" aria-labelledby="welcome">
+        <h2 id="welcome">Welcome to PostIt</h2>
+        <a class="create" href="#">Create an account</a>
+        <p class="small">or<br> Please log in</p>
+
+        <form id="login" action="index.html" method="get">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Log in</button>
+        </form>
+
+        <a class="forget" href="#">Forgot password</a>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
