@@ -1,9 +1,8 @@
-const endpoint = "https://gist.githubusercontent.com/RaccoonWithAPeanutButterJar/268e84d35febeb0dec1fc78ef789feb9/raw/07533cd9c416368e6b52b73425700dad94809da7/jasoun.json";
-
+//const endpoint = "https://gist.githubusercontent.com/RaccoonWithAPeanutButterJar/268e84d35febeb0dec1fc78ef789feb9/raw/07533cd9c416368e6b52b73425700dad94809da7/jasoun.json";
 const postsContainer = document.querySelector(".content");
 
 //fetching JSON
-fetch(endpoint)
+fetch(res="res/json/jasoun.json")
   .then(response => response.json())
   .then(posts => {
     //clear existing posts

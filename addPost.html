@@ -8,16 +8,29 @@
 </head>
 
 <body>
-  <header class="header">
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-    </ul>
-    <ul> <li><a class="profilepic" href="login.html"><img src="car.png" width="50" height="50"></a></li></ul>
-  </header>
+    <header class="header">
+        <ul class="nav">
+            <li class="home"><a href="index.html">Home</a></li>
+            <li><a href="addPost.html">addPost</a></li>
+        </ul>
 
-    <main>
+        <div class="profile-menu">
+            <input type="checkbox" id="profile-toggle" class="profile-toggle" />
+            <label for="profile-toggle" class="profilepic">
+            <img src="car.png" width="50" height="50" alt="profile">
+            </label>
+            <div class="dropdown-content" role="menu" aria-labelledby="profile-toggle">
+                <div class="dropdown-item">Peep Taimla</div>
+                <div class="dropdown-item">peeptaimla@ut.ee</div>
+                <a class="dropdown-item" href="login.html">Log out</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
         <div>
             <form>
+                <h2>Create a New Post</h2> 
                 <div>
                     <label for="post-body">Post body</label>
                     <textarea id="post-body" placeholder="Write your post content here..." rows="4"></textarea>

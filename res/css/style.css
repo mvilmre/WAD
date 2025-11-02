@@ -185,7 +185,7 @@
 
 /* Child Selector */
 main > div > form {
-    background-color: #c0c0c0; 
+    background-color: #606060; 
     width: 100%;
     max-width: 400px;
     padding: 25px;
@@ -194,37 +194,28 @@ main > div > form {
     border: 1px solid #999;
 }
 
-/* Form structure for alignment */
 main form {
-    display: flex; /* FLEXBOX: Stack form rows vertically */
+    display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* General Sibling Selector - Applies a border to all form row divs that follow the first form row div */
 main form > div:first-child ~ div {
     border-top: 1px dotted #999;
     padding-top: 15px;
 }
 
-
-/* Styling for input rows (Label + Input/Textarea/Button) */
 main form > div:not(.submit-button-wrapper) {
     display: flex;
     gap: 10px;
     align-items: flex-start;
 }
 
-/* Special alignment for the button row (to center it) */
 .submit-button-wrapper {
     display: block; 
     text-align: center;
     margin-top: 20px;
 }
-
-/* -------------------------------------- */
-/* 4. Form Elements */
-/* -------------------------------------- */
 
 label, span {
     font-size: 0.9em;
@@ -233,7 +224,6 @@ label, span {
     padding-top: 5px; 
 }
 
-/* Style for standard text, email, password inputs (e.g., Post Title) */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -246,7 +236,6 @@ input[type="password"] {
     font-size: 1em;
 }
 
-/* ID Selector (Required) */
 #post-body {
     width: 100%;
     min-height: 70px;
@@ -258,17 +247,13 @@ input[type="password"] {
     resize: vertical;
 }
 
-/* File Input Wrapper and Custom Button */
-
-/* Hide the actual file input */
 input[type="file"] {
     display: none;
 }
 
-/* Style the label to look like the "Choose File" button */
 label[for="file-upload"] {
     display: inline-block;
-    background-color: #808080;
+    background-color: #606060;
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
@@ -280,28 +265,23 @@ label[for="file-upload"] {
     white-space: nowrap;
 }
 
-/* Hover effect for the custom file upload button */
 label[for="file-upload"]:hover {
-    background-color: #9a9a9a; 
+    background-color: #606060; 
 }
 
-/* Container for displaying the selected filename */
 .file-name-display {
     font-size: 0.9em;
-    color: #555;
+    color: #606060;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
     flex-grow: 1;
 }
 
-/* Create Post Link styled as a Button */
 .create-post-button {
-    /* Link styling */
     text-decoration: none;
     display: inline-block;
 
-    /* Button styling */
     background-color: #336699;
     color: white;
     padding: 10px 20px;
@@ -384,6 +364,10 @@ label[for="file-upload"]:hover {
   color: var(--link);
   text-decoration: none;
   font-size: 14px;
+  font-weight: 600;
+  background-color: #336699;
+    padding: 6px;
+    border-radius: 4px;
 }
 
 .login-box p.small {
@@ -479,7 +463,6 @@ label[for="file-upload"]:hover {
   background: rgb(228,171,171);
   color: #000;
 }
-
 
 @media (max-width:400px) {
   .page { width: 92%; margin: 20px auto; }
