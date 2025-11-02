@@ -426,6 +426,61 @@ label[for="file-upload"]:hover {
   font-size: 13px;
 }
 
+.profile-menu {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.profile-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.profilepic {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  background-color: rgb(182,182,182);
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  z-index: 9999;
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.profile-toggle:checked + .profilepic + .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+  background: rgb(228,171,171);
+  color: #000;
+}
+
+
 @media (max-width:400px) {
   .page { width: 92%; margin: 20px auto; }
   .login-box { width: 100%; }

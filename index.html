@@ -10,12 +10,24 @@
 
 <body>
   <header class="header">
-    <ul class="nav">
-      <li class="home"><a href="index.html">Home</a></li>
-      <li><a href="addPost.html">addPost</a></li>
-    </ul>
-    <ul> <li><a class="profilepic" href="login.html"><img src="car.png" width="50" height="50"></a></li></ul>
-  </header>
+  <ul class="nav">
+    <li class="home"><a href="index.html">Home</a></li>
+    <li><a href="addPost.html">addPost</a></li>
+  </ul>
+  <div class="profile-menu">
+    <input type="checkbox" id="profile-toggle" class="profile-toggle" />
+    <label for="profile-toggle" class="profilepic">
+      <img src="car.png" width="50" height="50" alt="profile">
+    </label>
+    <div class="dropdown-content" role="menu" aria-labelledby="profile-toggle">
+      <div class="dropdown-item">Peep Taimla</div>
+      <div class="dropdown-item">peeptaimla@ut.ee</div>
+      <a class="dropdown-item" href="login.html">Log out</a>
+    </div>
+  </div>
+</header>
+
+
 
   <main class="main">
     <div class="side"></div>
