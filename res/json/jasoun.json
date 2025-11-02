@@ -1,0 +1,82 @@
+    [
+    {
+        "postId": 1,
+        "postTime": "2025-10-01T08:30:00Z",
+        "authorName": "Alice",
+        "profileImage": "https://www.placecats.com/neo/300/200",
+        "postContent": "Just finished my first coding project today!",
+        "postImage": null
+    },
+    {
+        "postId": 2,
+        "postTime": "2025-10-01T09:15:00Z",
+        "authorName": "Bob",
+        "profileImage": "https://media.tenor.com/1W-HKNvj8UoAAAAe/cat.png",
+        "postContent": "Good for you Alice!",
+        "postImage": null
+    },
+    {
+        "postId": 3,
+        "postTime": "2025-10-01T10:00:00Z",
+        "authorName": "Charlie",
+        "profileImage": "https://stickerrs.com/wp-content/uploads/2024/03/Cat-Meme-Stickers-Featured.png",
+        "postContent": "What kind of dog is this?",
+        "postImage": "https://petapixel.com/assets/uploads/2024/03/hedgehog-featured-image.jpg"
+    },
+    {
+        "postId": 4,
+        "postTime": "2025-10-01T11:45:00Z",
+        "authorName": "Diana",
+        "profileImage": "https://media.tenor.com/CNI1fSM1XSoAAAAe/shocked-surprised.png",
+        "postContent": "Charlie you muppet that is not a dog.",
+        "postImage": null
+    },
+    {
+        "postId": 5,
+        "postTime": "2025-10-01T12:30:00Z",
+        "authorName": "Ethan",
+        "profileImage": "https://i.pinimg.com/736x/b2/60/94/b26094970505bcd59c2e5fe8b6f41cf0.jpg",
+        "postContent": "When was the deadline for the next ItDS homework, anybody know?",
+        "postImage": null
+    },
+    {
+        "postId": 6,
+        "postTime": "2025-10-01T13:15:00Z",
+        "authorName": "Fiona",
+        "profileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnim2syXRUAOjKSHPaQ9RCabQQexcOU8qyJA&s",
+        "postContent": "It was like 5 days ago",
+        "postImage": null
+    },
+    {
+        "postId": 7,
+        "postTime": "2025-10-01T12:30:00Z",
+        "authorName": "Ethan",
+        "profileImage": "https://i.pinimg.com/736x/b2/60/94/b26094970505bcd59c2e5fe8b6f41cf0.jpg",
+        "postContent": "...Im so cooked",
+        "postImage": null
+    },
+    {
+        "postId": 8,
+        "postTime": "2025-10-01T14:45:00Z",
+        "authorName": "Hannah",
+        "profileImage": "https://i.ytimg.com/vi/qPTd10946jo/maxresdefault.jpg",
+        "postContent": "Anyone got a pen to borrow, I still need one.",
+        "postImage": null
+    },
+    {
+        "postId": 9,
+        "postTime": "2025-10-01T15:30:00Z",
+        "authorName": "Ian",
+        "profileImage": "https://i.ytimg.com/vi/eXwZMAz9Vh8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAVeD81lYf_ygdk1dICZMM1AtEY0w",
+        "postContent": "Yes, I do but I won't give it to you",
+        "postImage": null
+    },
+    {
+        "postId": 10,
+        "postTime": "2025-10-01T14:45:00Z",
+        "authorName": "Hannah",
+        "profileImage": "https://i.ytimg.com/vi/qPTd10946jo/maxresdefault.jpg",
+        "postContent": "I swear to god im never gonna get a pen, am I?",
+        "postImage": null
+    }
+    ]

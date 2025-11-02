@@ -74,8 +74,16 @@
     align-items: center;
 }
 
-.postheader p{
-    margin-right: 0.5rem;
+.postheader .authorname {
+    font-weight: bold;
+    color: #ff3333;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+.postheader div{
+  display: flex;
+  align-items: center;
 }
 
 #profile-pic-on-post{
